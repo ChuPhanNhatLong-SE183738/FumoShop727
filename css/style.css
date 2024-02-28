@@ -26,9 +26,14 @@
 }
 
 /* navbar */
+.navbar{
+    height: 10%;
+}
 .nav-link {
     position: relative;
     transition: color 0.2s ease-out, border-bottom-color 0.2s ease-out;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .nav-link:after {

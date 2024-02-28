@@ -26,17 +26,27 @@
 }
 
 /* navbar */
-
 .nav-link {
-    margin-right: 10px;
-    margin-left: 10px;
-    color: black;
-    font-family: 'Lobster', sans-serif;
-    text-transform: uppercase;
+    position: relative;
+    transition: color 0.2s ease-out, border-bottom-color 0.2s ease-out;
+}
+
+.nav-link:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.2s ease-out;
 }
 
 .nav-link:hover {
-    color: black;
+    color: #06b9a6;
+}
+
+.nav-link:hover:after {
+    border-bottom-color: #06b9a6;
 }
 
 .search {

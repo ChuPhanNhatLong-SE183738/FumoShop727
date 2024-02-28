@@ -21,7 +21,7 @@
     <script src="https://kit.fontawesome.com/5d239afda2.js" crossorigin="anonymous"></script>
     <nav style="background-color: white;" class="navbar navbar-expand-lg bg-body-tertiary fixed-top sticky-navbar">
         <div class="container">
-            <img class="img-fluid logo-img" src="/img/logo.png" alt="">
+            <img onclick="directToHome()" class="img-fluid logo-img" src="/img/logo.png" alt="">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -41,7 +41,10 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -84,7 +87,7 @@
             </div>
         </div>
     </section>
-    
+    <div id="back-to-top">&#8593;</div>
     <footer class="bg-dark text-light footer">
         <div class="container">
             <div class="row">
@@ -109,6 +112,12 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/carousel.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        function directToHome() {
+            window.location.href = "index.html";
+        }
+    </script>
 </body>
 
 </html>

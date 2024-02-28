@@ -106,3 +106,21 @@
     width: 80%;
     height: 5%;
 }
+
+/*back to top*/
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+    z-index: 999; /* Đảm bảo nút nằm trên top của các phần tử khác */
+}

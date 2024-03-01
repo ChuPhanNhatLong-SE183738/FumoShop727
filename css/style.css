@@ -29,6 +29,21 @@
 .navbar{
     height: 10%;
 }
+.nav-login{
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(6,175,166);
+    color: white;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
 .nav-link {
     position: relative;
     transition: color 0.2s ease-out, border-bottom-color 0.2s ease-out;
@@ -76,7 +91,7 @@
 }
 
 .btn0:hover{
-    background-color: rgb(4, 105, 100);;
+    background-color: rgb(4, 105, 100);
 }
 
 .item img {
@@ -99,6 +114,11 @@
 
 .btn{
     margin-bottom: 20px;
+}
+/*card*/
+.card-body:hover{
+    cursor: pointer;
+
 }
 
 /*Feedback*/
@@ -138,4 +158,26 @@
     cursor: pointer;
     font-size: 14px;
     z-index: 999; /* Đảm bảo nút nằm trên top của các phần tử khác */
+}
+
+/*slick button*/
+.slick-prev,
+.slick-next {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: black;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.slick-prev {
+    right: 55%;
+}
+
+
+.slick-next {
+    left: 55%; /* Adjust the distance from the right edge */
 }
